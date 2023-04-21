@@ -15,9 +15,9 @@
       align-items: center;
     }
     button {
-      margin: 0 5px;
-      width: 50px;
-      height: 25px;
+      margin: 0 2px;
+      width: 45px;
+      height: 30px;
       align-items: center;
       display: flex;
       justify-content: flex-end;
@@ -25,8 +25,8 @@
       background-color: $color--light-gray;
       border: $color--main 1px solid;
       img {
-        width: 50px;
-        height: 23px;
+        width: 45px;
+        height: 27px;
       }
     }
   }
@@ -98,8 +98,9 @@
         -moz-appearance:textfield; /* Firefox */
     }
     button {
-      width: auto;
-      padding: 1px 7px 0;
+      width: 45px;
+      height: 30px;
+      padding: 1px 14px 0;
       border-radius: 5px;
       align-items: center;
     }
