@@ -5,7 +5,7 @@
   for (i = imgSourcesMin; i < imgSourcesMax + 1; i++) {
     imgSources.push({
       type: 'image',
-      url:  `../assets/images/TJTST1_${('00' + i).slice(-3)}.png`
+      url:  `../chheh/TJTST1_${('00' + i).slice(-3)}.jpg`
     })
   }
   const viewer = OpenSeadragon({
@@ -13,6 +13,8 @@
     prefixUrl: '../assets/images/openseadragon/',
     tileSources: imgSources,
     sequenceMode: true,
+    minZoomImageRatio: 1,
+    maxZoomPixelRatio: 4,
 
     zoomInButton:   'viewer-zoom-in',
     zoomOutButton:  'viewer-zoom-out',
@@ -47,7 +49,7 @@
   }
 
   function displayCurrentPage(currentPage){
-    document.getElementById('current-page').innerHTML = currentPage + " of " + (imgSourcesMax - imgSourcesMin + 1);
+    document.getElementById('current-page').innerHTML = "第 "+ currentPage + " 頁／總算 " + (imgSourcesMax - imgSourcesMin + 1) + " 頁。";
   }
   displayCurrentPage(imgSourcesMin);
   document.getElementById('viewer-block').append(loadingImg);

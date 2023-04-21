@@ -18,21 +18,27 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Kóng siáⁿ-mih sû-tián
+title: 2023 ChhoeTaigi 台語辭典 Kiàn-pún
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  Test
+  Kán-kài
 baseurl: "/scannedImgViewer"
-url: "https://miau715.github.io"
+url: "https://thak.taigi.info/"
 
 # navigation
 header_pages:
-        - intro.markdown
-        - info.markdown
-        - viewer.markdown
+        - index.md
+        - soatbeng.md
+        - chheh.md
 
 # Server Config options
 livereload: true
+
+# markdown render engine.
+markdown: kramdown
+kramdown:
+  typographic_symbols:
+      ndash: --
 
 # Build settings
 theme: minima

@@ -2,7 +2,7 @@
   border-bottom: 1px solid #bec2bc;
   text-align: center;
   h1 {
-    margin: 15px 0;
+    margin: 20px 0;
     font-size: 28px;
     line-height: 1;
     a {
@@ -13,7 +13,7 @@
 }
 
 .site-nav {
-  margin-top: 15px;
+  margin-top: 25px;
   ul {
     @extend %plain-list;
     display: flex;
