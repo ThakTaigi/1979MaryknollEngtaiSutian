@@ -5,8 +5,9 @@
 
   <body class="viewer">
     <header class="viewer__header">
-      <h1 id="viewer-goto-home"><a href="{{ "/" | relative_url }}">紹介</a></h1>
-      <h1 id="viewer-title">{{ site.title | escape }}</h1>
+      <h1 id="viewer-title"><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+    </header>
+    <div id="viewer-controller" class="viewer__controller">
       <ul>
         <li>
           <button id="viewer-zoom-in">
@@ -23,8 +24,15 @@
             <img src="{{ site.baseurl }}/assets/images/icons/fit.svg" alt="reset size" />
           </button>
         </li>
+        <li>
+          <a href="{{ "/" | relative_url }}">
+            <button id="viewer-goto-index">
+              <img src="{{ site.baseurl }}/assets/images/icons/info.svg" alt="info" />
+            </button>
+          </a>
+        </li>
       </ul>
-    </header>
+    </div>
     <div id="viewer-block" class="viewer__content">
     </div>
     <footer class="viewer__footer">

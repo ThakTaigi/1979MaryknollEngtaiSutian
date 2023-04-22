@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Soat-bêng 說明
+title: 說明
 permalink: /soatbeng/
 ---
 

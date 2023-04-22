@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 2023 ChhoeTaigi 台語辭典 Kiàn-pún
+title: 2023 ChhoeTaigi台語辭典冊讀á
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
   Kán-kài
