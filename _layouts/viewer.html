@@ -6,33 +6,33 @@
   <body class="viewer">
     <header class="viewer__header">
       <h1 id="viewer-title"><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
-    </header>
-    <div id="viewer-controller" class="viewer__controller">
-      <ul>
-        <li>
-          <button id="viewer-zoom-in">
-            <img src="{{ site.baseurl }}/assets/images/icons/plus.svg" alt="zoom in" />
-          </button>
-        </li>
-        <li>
-          <button id="viewer-zoom-out">
-            <img src="{{ site.baseurl }}/assets/images/icons/minus.svg" alt="zoom out" />
-          </button>
-        </li>
-        <li>
-          <button id="viewer-home">
-            <img src="{{ site.baseurl }}/assets/images/icons/fit.svg" alt="reset size" />
-          </button>
-        </li>
-        <li>
-          <a href="{{ "/" | relative_url }}">
-            <button id="viewer-goto-index">
-              <img src="{{ site.baseurl }}/assets/images/icons/info.svg" alt="info" />
+      <div id="viewer-controller" class="viewer__controller">
+        <ul>
+          <li>
+            <button id="viewer-zoom-in">
+              <img src="{{ site.baseurl }}/assets/images/icons/plus.svg" alt="zoom in" />
             </button>
-          </a>
-        </li>
-      </ul>
-    </div>
+          </li>
+          <li>
+            <button id="viewer-zoom-out">
+              <img src="{{ site.baseurl }}/assets/images/icons/minus.svg" alt="zoom out" />
+            </button>
+          </li>
+          <li>
+            <button id="viewer-home">
+              <img src="{{ site.baseurl }}/assets/images/icons/fit.svg" alt="reset size" />
+            </button>
+          </li>
+          <li>
+            <a href="{{ "/" | relative_url }}">
+              <button id="viewer-goto-index">
+                <img src="{{ site.baseurl }}/assets/images/icons/info.svg" alt="info" />
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <div id="viewer-block" class="viewer__content">
     </div>
     <footer class="viewer__footer">
