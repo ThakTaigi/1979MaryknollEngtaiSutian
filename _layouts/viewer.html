@@ -6,7 +6,7 @@
   <body class="viewer">
     <header class="viewer__header">
       <h1 id="viewer-title"><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
-      <div id="viewer-controller" class="viewer__controller">
+      <div id="viewer-controller" class="viewer__header__controller">
         <ul>
           <li>
             <button id="viewer-zoom-in">
@@ -35,23 +35,28 @@
     </header>
     <div id="viewer-block" class="viewer__content">
     </div>
+
     <footer class="viewer__footer">
-      <ul>
-        <li>
-          <button id="viewer-prev">
-            <img src="{{ site.baseurl }}/assets/images/icons/prev.svg" alt="prev page" />
-          </button>
-        </li>
-        <li>
-          <button id="viewer-next">
-            <img src="{{ site.baseurl }}/assets/images/icons/next.svg" alt="next page" />
-          </button>
-        </li>
-      </ul>
-      <div id="current-page"></div>
-      <div class="viewer__goto-page">
-        去第<input type="number" id="goto-page" />頁
-        <button id="goto-page__go"> 掀 </button>
+      <div class="viewer__page-controller-1">
+        <ul>
+          <li>
+            <button id="viewer-prev">
+              <img src="{{ site.baseurl }}/assets/images/icons/prev.svg" alt="prev page" />
+            </button>
+          </li>
+          <li>
+            <button id="viewer-next">
+              <img src="{{ site.baseurl }}/assets/images/icons/next.svg" alt="next page" />
+            </button>
+          </li>
+          <li>
+            <div id="current-page" class="viewer__page-controller-1__current-page"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="viewer__page-controller-2">
+        去第<input type="number" id="goto-page" />頁，
+        <button id="goto-page__go">Hian 掀</button>
       </div>
     </footer>
   </body>

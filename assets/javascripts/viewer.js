@@ -49,7 +49,7 @@
   }
 
   function displayCurrentPage(currentPage){
-    document.getElementById('current-page').innerHTML = "第"+ currentPage + "／" + (imgSourcesMax - imgSourcesMin + 1) + "頁。";
+    document.getElementById('current-page').innerHTML = "第 "+ currentPage + " 頁／總算 " + (imgSourcesMax - imgSourcesMin + 1) + " 頁。";
   }
   displayCurrentPage(imgSourcesMin);
   document.getElementById('viewer-block').append(loadingImg);

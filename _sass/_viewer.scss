@@ -1,7 +1,7 @@
 .viewer {
-  &__header, &__controller, &__footer {
+  &__header, &__footer {
+    padding: 6px 6px;
     background: $color--fade-main;
-    padding: 5px 15px;
     color: $color--light-main;
     ul {
       @extend %plain-list;
@@ -15,8 +15,8 @@
       align-items: center;
     }
     button {
-      margin: 0 3px 3px;
-      width: 40px;
+      margin: 5px 5px;
+      width: 50px;
       height: 30px;
       align-items: center;
       display: flex;
@@ -25,7 +25,7 @@
       background-color: $color--light-gray;
       border: $color--main 1px solid;
       img {
-        width: 40px;
+        width: 50px;
         height: 27px;
       }
     }
@@ -36,11 +36,15 @@
     h1 {
       font-size: 22px;
       margin: 0;
+      padding-left: 10px;
     }
     h1 a {
       font-size: 22px;
       color: $color--light-main;
       text-decoration: none;
+    }
+    &__controller {
+      padding-right: 10px;
     }
   }
   &__content {
@@ -52,9 +56,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    > div {
-      margin-left: 10px;
-    }
+    padding: 6px 6px;
   }
   &__loading {
     position: absolute;
@@ -73,13 +75,21 @@
       height: 64px;
     }
   }
-  &__goto-page {
+  &__page-controller-1 {
+    &__current-page {
+      margin-left: 5px;
+      font-size: 19px;
+    }
+  }
+  &__page-controller-2 {
     display: flex;
     align-items: center;
+    font-size: 19px;
     input[type=number] {
-      width: 40px;
+      font-size: 19px;
+      width: 65px;
       border-radius: 2px;
-      height: 22px;
+      height: 26px;
       line-height: 22px;
       padding: 0 5px;
       color: $color--fade-dark-main;
@@ -98,16 +108,16 @@
         -moz-appearance:textfield; /* Firefox */
     }
     button {
-      width: 40px;
+      width: 90px;
       height: 30px;
-      padding: 0px 12px 0;
+      padding: 0px 10px;
       border-radius: 5px;
       align-items: center;
     }
   }
 }
 
-@media screen and (max-width: 679px) {
+@media screen and (max-width: 670px) {
   .viewer {
     &__header {
       flex-direction: column;
@@ -115,13 +125,8 @@
         text-align: center;
       }
     }
-  }
-}
-
-@media screen and (max-width: 519px) {
-  .viewer {
     &__footer {
-      flex-wrap: wrap;
+      flex-direction: column;
       > ul {
         width: 100%;
       }
