@@ -28,6 +28,7 @@ url: "https://thak.taigi.info/"
 # navigation
 header_pages:
         - index.md
+        - bokliok.md
         - soatbeng.md
         - chheh.md
 

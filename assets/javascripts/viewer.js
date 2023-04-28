@@ -13,6 +13,7 @@
     prefixUrl: '../assets/images/openseadragon/',
     tileSources: imgSources,
     sequenceMode: true,
+    preload: true,
     minZoomImageRatio: 1,
     maxZoomPixelRatio: 4,
 
@@ -53,6 +54,8 @@
   }
   displayCurrentPage(imgSourcesMin);
   document.getElementById('viewer-block').append(loadingImg);
+
+  document.getElementById('viewer-block').querySelector('.openseadragon-canvas').focus();
 
   // get page from url
   const urlSearchParams = new URLSearchParams(window.location.search);
