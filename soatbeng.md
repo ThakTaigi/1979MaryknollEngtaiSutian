@@ -13,4 +13,4 @@ permalink: /soatbeng/
 
 ## Kám-siā 感謝
 - 感謝 [@miau715](https://github.com/miau715){:target="_blank"} 設計網站
-- 感謝 [台文雞絲麵 Tâi-bûn Ke-si-mī](https://www.zeczec.com/projects/taibun-kesimi){:target="_blank"} 贊助者長期支持
+- 感謝 [台文雞絲麵 Tâi-bûn Ke-si-mī](https://r.zecz.ec/JiZo){:target="_blank"} 贊助者長期支持
