@@ -7,4 +7,5 @@ title: 目錄
 ---
 
 ## Bo̍k-lio̍k 目錄
-- [冊皮](./chheh/?page=1){:target="_blank"}
+- [Forward (序文)](./chheh/?page=1){:target="_blank"}
+- [詞彙](./chheh/?page=2){:target="_blank"}
