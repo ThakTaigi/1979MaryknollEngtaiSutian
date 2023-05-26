@@ -167,17 +167,16 @@
     &__header {
       h1 {
         padding-left: 0px;
-        font-size: 16px;
+        font-size: 18px;
+        padding-top: 2px;
+        padding-bottom: 2px;
       }
       h1 a {
-        font-size: 15px;
+        font-size: 18px;
       }
       &__controller {
         padding-right: 0px;
       }
-    }
-    button {
-      margin: 3px 3px;
     }
     &__page-controller-1 {
       &__current-page {
