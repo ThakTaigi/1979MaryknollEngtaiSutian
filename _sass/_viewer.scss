@@ -118,6 +118,11 @@
 }
 
 @media screen and (max-width: 670px) {
+  .page-header {
+    h1 {
+      font-size: 22px;
+    }
+  }
   .viewer {
     &__header {
       flex-direction: column;
@@ -134,8 +139,64 @@
   }
 }
 
-@media screen and (max-width: 369px) {
-  .viewer__header h1 a {
-    font-size: 19px;
+@media screen and (max-width: 420px) {
+  .page-header {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  .site-nav {
+    li {
+      margin: 0 10px;
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+  .page-content {
+    flex-grow: 1;
+    > .container {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  .page-footer {
+    font-size: 18px;
+  }
+  .viewer {
+    &__header {
+      h1 {
+        padding-left: 0px;
+        font-size: 18px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+      h1 a {
+        font-size: 18px;
+      }
+      &__controller {
+        padding-right: 0px;
+      }
+    }
+    &__page-controller-1 {
+      &__current-page {
+        font-size: 16px;
+      }
+    }
+    &__page-controller-2 {
+      font-size: 16px;
+      input[type=number] {
+        font-size: 16px;
+        width: 65px;
+        height: 27px;
+        line-height: 18px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      button {
+        width: 78px;
+        height: 27px;
+      }
+    }
   }
 }
