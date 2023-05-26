@@ -134,8 +134,66 @@
   }
 }
 
-@media screen and (max-width: 369px) {
-  .viewer__header h1 a {
-    font-size: 19px;
+@media screen and (max-width: 420px) {
+  .page-header {
+    h1 {
+      font-size: 18px;
+    }
+  }
+  .site-nav {
+    li {
+      margin: 0 100px;
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+  .page-footer {
+    font-size: 16px;
+  }
+  .viewer {
+    &__header {
+      h1 {
+        padding-left: 0px;
+        font-size: 16px;
+      }
+      h1 a {
+        font-size: 15px;
+      }
+      &__controller {
+        padding-right: 0px;
+      }
+    }
+    button {
+      margin: 3px 3px;
+      width: 45px;
+      height: 27px;
+      margin-left: 8px;
+      margin-right: 8px;
+      img {
+        width: 45px;
+        height: 24px;
+      }
+    }
+    &__page-controller-1 {
+      &__current-page {
+        font-size: 16px;
+      }
+    }
+    &__page-controller-2 {
+      font-size: 16px;
+      input[type=number] {
+        font-size: 16px;
+        width: 65px;
+        height: 27px;
+        line-height: 18px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      button {
+        width: 78px;
+        height: 27px;
+      }
+    }
   }
 }
