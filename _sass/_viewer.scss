@@ -118,6 +118,11 @@
 }
 
 @media screen and (max-width: 670px) {
+  .page-header {
+    h1 {
+      font-size: 20px;
+    }
+  }
   .viewer {
     &__header {
       flex-direction: column;
@@ -144,12 +149,19 @@
     li {
       margin: 0 10px;
       a {
-        font-size: 14px;
+        font-size: 18px;
       }
     }
   }
+  .page-content {
+    flex-grow: 1;
+    > .container {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
   .page-footer {
-    font-size: 16px;
+    font-size: 18px;
   }
   .viewer {
     &__header {
